@@ -1,0 +1,23 @@
+{
+    "name": "node-crud-app",
+    "version": "0.0.1",
+    "description": "node oh node",
+    "main": "src/app.js",
+    "scripts": {
+        "start": "node src/app.js",
+        "test": "jest",
+        "dev": "nodemon src/app.js"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "jsonwebtoken": "^9.0.2",
+        "mysql2": "^3.12.0"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.9"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}
