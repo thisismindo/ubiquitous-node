@@ -1,4 +1,4 @@
-# Node
+# Ubiquitous Node
 
 ## Setup
 
