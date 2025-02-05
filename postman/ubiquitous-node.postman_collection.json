@@ -1,0 +1,381 @@
+{
+	"info": {
+		"_postman_id": "23e84774-a69a-47ec-923d-88abdc8a594e",
+		"name": "NodeT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1162882"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "Books",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{node_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{node_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/books/replace-with-book-id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"books",
+								"replace-with-book-id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{node_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"mindo's book\",\r\n    \"author\": \"mindo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update book",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{node_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"foo's book\",\r\n    \"author\": \"foo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/books/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"books",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{node_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{node_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/users/replace-with-book-id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"users",
+								"replace-with-book-id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{node_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"mindo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{node_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"foo-bar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JWT",
+			"item": [
+				{
+					"name": "Generate token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const getAccessToken = (data) => {\r",
+									"    const { accessToken } = data;\r",
+									"    return accessToken;\r",
+									"};\r",
+									"const getRefreshToken = (data) => {\r",
+									"    const { refreshToken } = data;\r",
+									"    return refreshToken;\r",
+									"};\r",
+									"const data = pm.response.json();\r",
+									"pm.environment.set(\"node_access_token\", getAccessToken(data));\r",
+									"pm.environment.set(\"node_refresh_token\", getRefreshToken(data));"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/generate-token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"generate-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const getAccessToken = (data) => {\r",
+									"    const { accessToken } = data;\r",
+									"    return accessToken;\r",
+									"};\r",
+									"const getRefreshToken = (data) => {\r",
+									"    const { refreshToken } = data;\r",
+									"    return refreshToken;\r",
+									"};\r",
+									"const data = pm.response.json();\r",
+									"pm.environment.set(\"node_access_token\", getAccessToken(data));\r",
+									"pm.environment.set(\"node_refresh_token\", getRefreshToken(data));"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"refreshToken\": \"{{node_refresh_token}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/refresh-token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"refresh-token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
